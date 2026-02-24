@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EVOLUTION TECHNOLOGIQUE</title>
+ <style>
+        /* CSS : Le style du site */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .louis {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .step {
+            background: white;
+            margin: 15px 0;
+            padding: 20px;
+            border-left: 5px solid #3498db;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .step:hover {
+            transform: scale(1.02);
+            background: #eef7fe;
+        }
+        .step h2 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+        .description {
+            display: none; /* Caché par défaut */
+            margin-top: 10px;
+            font-style: normal;
+        }
+    </style>
+</head>
+<header>
+    <h1>LA CHRONOLOGIE DE L'EVOLUTION DU NUMERIQUE</h1>
+    <p>Cliquez sur chaque étape pour découvrir son rôle !</p>
+</header>
+<body>
+
+<div class="louis">
+    <div class="step" onclick="toggleText(this)">
+         <h1>⚡ 1. Le Socle : L'Électricité</h1>
+        <p class="description">Le passage du courant continu (Edison) au courant alternatif (Tesla)
+            permet de transporter l'énergie sur de longues distances.
+            L'énergie brute : Le passage du courant continu (Edison) au courant alternatif (Tesla) permet de transporter l'énergie sur de longues distances.
+            L'infrastructure : L'électrification des villes crée le "système nerveux" mondial indispensable à tout ce qui va suivre.
+        </p>
+    </div>
+
+    <div class="step" onclick="toggleText(this)">
+         <h1>🖥️ 2. L'Outil : L'Ordinateur</h1>
+        <p class="description">L'électricité n'est plus seulement une force motrice, elle devient un vecteur de calcul.
+            De l'analogique au numérique : Apparition des premiers calculateurs (ENIAC) puis des ordinateurs personnels (PC).
+            La miniaturisation : L'invention du transistor remplace les tubes à vide, permettant de faire tenir une puissance
+            de calcul immense dans un volume réduit.
+        </p>
+    </div>
+
+    <div class="step" onclick="toggleText(this)">
+        <h1>💾 3. L'Intelligence de la Machine : Le Logiciel</h1>
+        <p class="description">Le "Hardware" (matériel) a besoin d'un "Software" (logiciel) pour savoir quoi faire.
+            L'abstraction : Création des langages de programmation. On ne manipule plus des câbles, mais du code.</p>
+    </div>
+    <div class="step" onclick="toggleText(this">
+        <h1>🌐 4. Le Réseau : Internet</h1>
+        <p class="description">Les machines cessent d'être des îles isolées pour devenir un archipel mondial.
+            La connectivité : Protocoles TCP/IP et naissance du Web.
+            La dématérialisation : L'information circule instantanément, changeant radicalement le commerce, la culture et les relations sociales.
+        </p>
+    </div>
+    <div class="step" onclick="toggleText(this)">
+        <h1>📱 5. La Mobilité : Le Smartphone</h1>
+        <p class="description">L'ordinateur quitte le bureau pour s'installer dans notre poche.
+        L'ubiquité : On est connecté 24h/24. Le smartphone devient une extension de soi.
+        L'ère des données : La multiplication des capteurs (GPS, photo, accéléromètre) génère une quantité massive de données (Big Data).
+        </p>
+    </div>
+    <div class="step" onclick="toggleText(this)">
+        <h1>🤖 6. L'Autonomie : L'IA</h1>
+        <p class="description">Le logiciel n'est plus seulement une suite d'instructions fixes, il apprend par lui-même.
+        Deep Learning : Les algorithmes analysent les données récoltées par Internet et les smartphones pour prédire, créer et décider.
+        L'assistance : L'IA devient le moteur de recherche, le traducteur et le créateur de demain.
+        </p>
+    </div>
+    <div class="step" onclick="toggleText(this)">
+        <h1>🤖7. L'Aboutissement : Le Supercalculateur</h1>
+        <p class="description">Nous arrivons ici à votre définition. Le supercalculateur n'est plus une "grosse boîte", c'est une infrastructure globale.
+            Le Supercalculateur-Réseau : Ce n'est plus une unité centrale, mais une entité décentralisée (Cloud, Edge Computing).
+            L'Usine à IA : Ces sites consomment l'électricité (étape 1) pour faire tourner des logiciels (étape 3) via Internet (étape 4) afin d'alimenter
+            les IA (étape 6) de nos smartphones (étape 5).
+        </p>
+    </div>
+
+
+
+
+
+
+<script>
+
+    /* JavaScript : L'interactivité */
+    function toggleText(element) {
+        // On cherche la description à l'intérieur de l'élément cliqué
+        const desc = element.querySelector('.description');
+
+        // Si elle est cachée, on l'affiche, sinon on la cache
+        if (desc.style.display === "block") {
+            desc.style.display = "none";
+        } else {
+            desc.style.display = "block";
+        }
+    }
+
+</script>
+
+</body>
+</html>
